@@ -1,4 +1,4 @@
-   static/fansy-widget.js
+
    /**
  * Виджет чата Fansy для сайта fancy-group.pro
  * Обычный режим: FansyWidget.init({ apiUrl: '...' }) — создаёт свою кнопку «Чат».
