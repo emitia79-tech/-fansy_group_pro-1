@@ -1,0 +1,16 @@
+Замените ВСЕ вхождения "https://ВАШ_СЕРВЕР_БОТА" на URL вашего бота с Render (например https://fansy-chat-xxxx.onrender.com), затем скопируйте весь блок ниже и вставьте в админку fancy-group.pro в раздел «Дополнительный код» / «Код перед </body>».
+
+---
+<script src="https://ВАШ_СЕРВЕР_БОТА/static/fansy-widget.js"></script>
+<script>
+  FansyWidget.init({
+    apiUrl: 'https://ВАШ_СЕРВЕР_БОТА/chat',
+    attachTo: '.crm-widget-button-mobile',
+    title: 'Fansy',
+    subtitle: 'Помогу с подбором сувениров',
+    placeholder: 'Напишите сообщение...',
+    sendLabel: 'Отправить',
+    openLabel: 'Чат',
+  });
+</script>
+---

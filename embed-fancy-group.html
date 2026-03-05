@@ -1,0 +1,22 @@
+<!--
+  Код для вставки на сайт https://fancy-group.ru
+  Вставьте этот блок в шаблон страницы (перед </body>): раздел
+  «Дополнительный код» / «Скрипты в подвале» в админке сайта.
+
+  1. Замените BASE_URL на адрес вашего сервера с ботом, например:
+     https://bot.fancy-group.ru
+     (без слэша в конце)
+
+  2. Сохраните и опубликуйте изменения.
+-->
+<script src="BASE_URL/static/fansy-widget.js"></script>
+<script>
+  FansyWidget.init({
+    apiUrl: 'BASE_URL/chat',
+    title: 'Fansy',
+    subtitle: 'Помогу с подбором сувениров',
+    placeholder: 'Напишите сообщение...',
+    sendLabel: 'Отправить',
+    openLabel: 'Чат',
+  });
+</script>

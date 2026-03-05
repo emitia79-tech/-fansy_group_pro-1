@@ -1,0 +1,15 @@
+# Render.com — деплой по подключению репозитория
+# В панели Render: New → Web Service, подключите репо, выберите этот файл или задайте вручную:
+# Build Command: pip install -r requirements.txt
+# Start Command: uvicorn server:app --host 0.0.0.0 --port $PORT
+# Environment: OPENAI_API_KEY = (секрет из настроек)
+
+services:
+  - type: web
+    name: fansy-chat
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
